@@ -8,7 +8,7 @@ const port = process.env.PORT;
 const app = express();
 
 app.use(express.json());
-app.use("/rest/v1/user", userRouter);
+app.use("/rest/v1", userRouter);
 
 app.listen(port, ()=>{
     console.log('Executando...')
